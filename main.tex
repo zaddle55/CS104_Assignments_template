@@ -1,0 +1,117 @@
+\documentclass[
+	12pt, % Default font size, values between 10pt-12pt are allowed
+	%letterpaper, % Uncomment for US letter paper size
+	%spanish, % Uncomment for Spanish
+]{fphw}
+
+% Template-specific packages
+\usepackage[american]{babel}
+\usepackage{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[scheme=plain]{ctex}
+\usepackage{graphicx,subfigure} % Required for including images
+\usepackage{booktabs} % Required for better horizontal rules in tables
+\usepackage{listings} % Required for insertion of code
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode} %matlab code
+\usepackage{fontspec}
+\usepackage{enumerate} % To modify the enumerate environment
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+\usepackage{bm}
+%----------------------------------------------------------------------------------------
+\setmainfont{Times New Roman} % 设置英文字体为Times New Roman，可自选
+
+% Code-Style 代码模板
+\lstdefinestyle{mystyle}{
+    basicstyle=\ttfamily\footnotesize, % the font and size for code blocks
+    breakatwhitespace=false,           % sets if automatic breaks should only happen at whitespace
+    breaklines=true,                   % sets automatic line breaking
+    keepspaces=true,                   % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+    numbers=left,                      % where to put the line-numbers; possible values are (none, left, right)
+    numbersep=5pt,                     % how far the line-numbers are from the code
+    showspaces=false,                  % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+    showstringspaces=false,            % underline spaces within strings only
+    tabsize=4                          % sets default tabsize to 2 spaces
+}
+\lstset{style=mystyle}
+% 使用方法：\lstinputlisting[language=Python]{code/a2.py}
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{document}
+\title{Assignment \#1} % Assignment title
+\author{Xiao Wang, 小王 12014689} % Student name and ID
+\date{March 6, , 2024} % Due date
+
+% ----------------------- This is where you put the logo at the top ---------------------
+\begin{center}
+    \includegraphics[scale=0.75]{img/logo.png}
+\end{center}
+
+%\institute{SOUTHERN UNIVERSITY\\OF SCIENCE AND TECHNOLOGY} % Institute or school name
+\class{Introduction to Mathematical Logic } % Course or class name
+\professor{Prof. Tao } % Professor or teacher in charge of the assignment
+
+%----------------------------------------------------------------------------------------
+
+\setlength{\abovecaptionskip}{-0.1cm}
+\setlength{\belowcaptionskip}{0cm}   %调整图片标题与下文距离
+
+
+\maketitle % Output the assignment title, created automatically using the information in the custom commands above
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT CONTENT
+%----------------------------------------------------------------------------------------
+
+\section*{Question 1}
+\begin{problem}
+	\includegraphics[width=440pt]{img/logo.png} % Problem image here
+\end{problem}
+%------------------------------------------------
+\subsection*{Answer}
+\begin{enumerate}[(\itshape a\normalfont)]
+    \item From the Question 1(a), we have the $P(S_A)=0.8$ and $P(S_B)=0.6$, the $S_A$ and $S_B$ make decisions independently means that $P(S_AS_B)=P(S_A)P(S_B)$, So we have all the possible outcomes are 
+\end{enumerate}
+%----------------------------------------------------------------------------------------
+\clearpage
+
+\section*{Question 2}
+\begin{problem}
+	\includegraphics[width=440pt]{img/logo.png}
+\end{problem}
+%------------------------------------------------
+\subsection*{Answer}
+\begin{enumerate}[(\itshape a\normalfont)] % Sub-questions styled as italic letters
+	\item From the question 2, we have the conditional mean $$E(Y|X=i)=\sum_{j=0}^i j\cdot P(Y=j|X=i)$$, and the
+\end{enumerate}
+%----------------------------------------------------------------------------------------
+\clearpage
+
+\section*{Question 3}
+\begin{problem}
+    \includegraphics[width=440pt]{img/logo.png}\\ % Mutiple images can be added here
+    \includegraphics[width=440pt]{img/logo.png}
+\end{problem}
+%------------------------------------------------
+\subsection*{Answer} 
+\begin{enumerate}[(\itshape a\normalfont)]
+    \item From sub-question (a), we can get the triangle $S=\{(x,y):-6<y<x<6\}$ showing in the fig 1. 
+\end{enumerate}
+%----------------------------------------------------------------------------------------
+\clearpage
+
+\section*{Question 4}
+\begin{problem}
+    \includegraphics[width=440pt]{img/logo.png}
+\end{problem}
+%------------------------------------------------
+\subsection*{Answer}
+\begin{enumerate}[(\itshape a\normalfont)]
+    \item \lstinputlisting[language=Java]{code/demo.java} % The first code block 
+\end{enumerate}
+%----------------------------------------------------------------------------------------
+
+\end{document}
